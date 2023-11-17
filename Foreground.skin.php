@@ -149,7 +149,7 @@ class foregroundTemplate extends BaseTemplate {
 		<?php if ( $wgForegroundFeatures['NavWrapperType'] != '0' ) { echo "</div>";
 		} ?>
 
-		<div id="page-content" class="vertical">
+		<div id="page-content">
 		<div class="row">
 				<div class="large-12 columns">
 					<!-- Output page indicators -->
