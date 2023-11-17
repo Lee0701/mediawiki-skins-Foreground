@@ -27,9 +27,6 @@ body {
 
 #navwrapper {
     writing-mode: horizontal-tb;
-}
-
-nav.top-bar {
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -47,6 +44,10 @@ nav.top-bar {
 
 #page-content > .row > * {
     height: 100%;
+}
+
+#editform, #userloginForm {
+    writing-mode: horizontal-tb;
 }
 
 h1,
