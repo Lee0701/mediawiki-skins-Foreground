@@ -149,7 +149,7 @@ class foregroundTemplate extends BaseTemplate {
 		<?php if ( $wgForegroundFeatures['NavWrapperType'] != '0' ) { echo "</div>";
 		} ?>
 
-		<div id="page-content">
+		<div id="page-content" class="vertical">
 		<div class="row">
 				<div class="large-12 columns">
 					<!-- Output page indicators -->
@@ -175,12 +175,12 @@ class foregroundTemplate extends BaseTemplate {
 
 		<div id="mw-js-message" style="display:none;"></div>
 
-		<div class="row">
+		<div class="row content">
 				<div id="p-cactions" class="large-12 columns">
 					<?php if ( $this->get( 'loggedin' ) || $wgForegroundFeatures['showActionsForAnon'] ): ?>
 						<a id="actions-button" href="#" data-dropdown="actions" data-options="align:left; is_hover: true; hover_timeout:700" class="button small secondary radius"><i class="fa fa-cog"><span class="show-for-medium-up">&nbsp;<?php echo wfMessage( 'actions' )->text() ?></span></i></a>
 						<!--RTL -->
-						<ul id="actions" class="f-dropdown" data-dropdown-content>
+						<ul id="actions" class="f-dropdown horizontal" data-dropdown-content>
 							<?php foreach ( $this->data['content_actions'] as $key => $item ) { echo preg_replace( [ '/\sprimary="1"/','/\scontext="[a-z]+"/','/\srel="archives"/' ], '', $this->makeListItem( $key, $item ) );
 							} ?>
 							<?php Hooks::run( 'SkinTemplateToolboxEnd', [ &$this, true ] );  ?>

@@ -50,7 +50,8 @@
                 "assets/stylesheets/legacy.css",
                 "assets/stylesheets/foundation.css",
                 "assets/stylesheets/foreground.css",
-                "assets/stylesheets/foreground-print.css"
+                "assets/stylesheets/foreground-print.css",
+                "assets/stylesheets/vertical.css"
             ]
         },
         "skins.foreground.modernizr": {
